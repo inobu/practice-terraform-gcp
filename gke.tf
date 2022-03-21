@@ -6,7 +6,8 @@ resource "google_container_cluster" "primary" {
   initial_node_count       = 1
 
 
-  network = var.network
+  network    = google_compute_network.custom.id
+  subnetwork = google_compute_subnetwork.custom.id
 
   min_master_version = var.min_master_version
 

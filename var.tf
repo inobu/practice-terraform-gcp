@@ -8,6 +8,10 @@ variable "location" {
   default = "asia-northeast1-b"
 }
 
+variable "region" {
+  default = "asia-northeast1"
+}
+
 variable "network" {
   default = "default"
 }
