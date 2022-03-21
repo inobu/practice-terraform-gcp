@@ -1,7 +1,5 @@
 variable "gcp_project" {}
 
-variable "tf_bucket" {}
-
 variable "cluster_name" {
   default = "cluster"
 }
